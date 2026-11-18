@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="description" content="Panduan kebugaran dan olahraga ringan untuk keseharian yang sibuk. Tidak perlu alat mahal atau waktu berjam-jam,cukup 5 hingga 15 menit di sela padatnya aktivitas dan pekerjaan.">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" data-route="home">
+     <img src="images/first-step-logo-512.png" alt="Logo First Step" width="36" height="36">
+      <span class="brand-text">
+        <span class="brand-name">First Step</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#latihan" data-route="latihan">Latihan</a>
+      <a href="#about" data-route="about">About</a>
+      <a href="#contact" data-route="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="#login" data-route="login" id="loginLink">Masuk</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Ganti mode gelap/terang" title="Ganti mode gelap/terang">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </button>
+      <a href="#login" class="avatar" data-route="login" id="headerAvatar" title="Akun Pengguna / Masuk"><span class="material-symbols-outlined">person</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi seluler">
+    <a href="#home" data-route="home">Home</a>
+    <a href="#latihan" data-route="latihan">Latihan</a>
+    <a href="#about" data-route="about">About</a>
+    <a href="#contact" data-route="contact">Contact</a>
+    <a href="#login" data-route="login" id="mobileAuthLink"><span class="material-symbols-outlined" style="font-size:18px;margin-right:4px">login</span> Masuk / Daftar Member</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= HOME ================= -->
+<section class="page" id="page-home" data-page="home">
+  <div class="hero relative overflow-hidden">
+    <div class="glow a"></div><div class="glow b"></div>
+    <div class="container layer">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="h-xl">Semua dimulai dari satu langkah kecil.</h1>
+          <p class="lead">Panduan kebugaran dan olahraga ringan untuk keseharian yang sibuk. Tidak perlu alat mahal atau waktu berjam-jam, cukup 5 hingga 15 menit di sela padatnya aktivitas dan pekerjaan.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#latihan" data-route="latihan">Mulai Latihan <span class="material-symbols-outlined shift">arrow_forward</span></a>
+            <a class="btn btn-light" href="#about" data-route="about"><span class="material-symbols-outlined">info</span>Tentang Kami</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>15 rb+</b><span>Pengguna Aktif</span></div>
+            <div class="stat"><b>7-12 m</b><span>Rerata Durasi</span></div>
+            <div class="stat"><b>98%</b><span>Bebas Kram Duduk</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="photo-card">
+            <div class="photo-frame">
+              <img src="images/hero 2.jpg" alt="Seseorang melakukan peregangan di taman" loading="eager">
+              <div class="overlay-card">
+                <div class="row">
+                  <div class="icon-box sm"><span class="material-symbols-outlined" style="color:var(--secondary)">timer</span></div>
+                  <div><h4>Regangan kecil</h4><p>5 Menit • Efek Segar Instan</p></div>
+                </div>
+                <button class="play-btn" aria-label="Putar latihan" data-start="Regangan Kecil|5|5 menit latihan peregangan statis &amp; dinamis untuk meregangkan bahu dan otot leher sebelum aktivitas berikutnya."><span class="material-symbols-outlined">play_arrow</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="float-pill">
+            <span class="material-symbols-outlined icon-fill primary-text">check_circle</span>
+            <div><b>Rutinitas Harian</b><span class="t">Target tercapai hari ini</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section band-low" id="why">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Kenapa First Step?</span>
+          <h2 class="h-lg">Dirancang presisi untuk ritme keseharian yang padat</h2>
+        </div>
+        <p class="muted"></p>
+      </div>
+      <div class="grid cols-3" style="gap:2rem">
+        <div class="card lift why-card">
+          <div>
+            <div class="icon-box"><span class="material-symbols-outlined">schedule</span></div>
+            <h3>Singkat &amp; Fleksibel</h3>
+            <p>Program 5–15 menit yang praktis dilakukan sebelum mulai beraktivitas, di sela-sela waktu istirahat, maupun sebelum tidur.</p>
+          </div>
+          <div class="why-foot"><i></i><span>Maksimal 15 Menit</span></div>
+        </div>
+        <div class="card lift why-card">
+          <div>
+            <div class="icon-box"><span class="material-symbols-outlined">home_pin</span></div>
+            <h3>Tanpa Alat Mahal</h3>
+            <p>Tidak butuh tempat luas, cukup ruang 2x3 meter di sudut kamar atau halaman rumah. Manfaatkan bobot tubuh sendiri (calisthenics ringan) tanpa perlu berlangganan gym.</p>
+          </div>
+          <div class="why-foot"><i></i><span>100% Bodyweight</span></div>
+        </div>
+        <div class="card lift why-card">
+          <div>
+            <div class="icon-box"><span class="material-symbols-outlined">trending_up</span></div>
+            <h3>Progres Bertahap</h3>
+            <p>Mulai dari intensitas low-impact. Aman bagi sendi serta menjaga tubuh tetap segar tanpa rasa lelah berlebihan yang mengganggu fokus Anda seharian.</p>
+          </div>
+          <div class="why-foot"><i></i><span>Bebas Cedera</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:3rem">
+        <div>
+          <span class="eyebrow">Koleksi Terpopuler</span>
+          <h2 class="h-lg">Paling sering dipraktikkan minggu ini</h2>
+        </div>
+        <a class="link-arrow" href="#latihan" data-route="latihan">Lihat semua latihan <span class="material-symbols-outlined">east</span></a>
+      </div>
+      <div class="grid cols-3" style="gap:2rem" id="popularGrid"></div>
+    </div>
+  </div>
+
+  <div class="section" style="padding:4rem 0; background:linear-gradient(180deg,var(--surface),rgba(242,243,255,.5))">
+    <div class="container">
+      <div class="challenge-box">
+        <div class="glow"></div>
+        <div class="challenge-grid">
+          <div class="stack" style="gap:1rem">
+            <div class="badge soft"><span class="material-symbols-outlined" style="font-size:16px">local_fire_department</span>Tantangan Konsistensi</div>
+            <h2 class="h-lg">Coba Tantangan 7 Hari</h2>
+            <p class="muted">Mulai bangun kebiasaan bergerak dengan komitmen 7 hari berturut-turut. Setiap hari hanya 7 menit gerakan ringan pengurang stres.</p>
+            <div style="padding-top:.5rem"><button class="btn btn-primary" id="challengeBtn">Ikuti Tantangan Sekarang</button></div>
+          </div>
+          <div class="progress-panel">
+            <div class="panel-head"><span>Progres Mingguan Anda</span><span class="v" id="streakCounter">Hari 3 dari 7 Selesai</span></div>
+            <div class="week-grid" id="weekGrid"></div>
+            <div class="note-row">
+              <div class="l"><span class="material-symbols-outlined">verified</span><span>Konsisten 3 hari berturut-turut! Lanjutkan ritme Anda besok pagi.</span></div>
+              <div class="bar"><div id="streakBar" style="width:43%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LATIHAN ================= -->
+<section class="page" id="page-latihan" data-page="latihan">
+  <div class="page-hero">
+    <div class="glow a" style="right:2.5rem"></div><div class="glow b" style="left:0"></div>
+    <div class="container">
+      <div class="inner">
+        <div style="max-width:42rem">
+          <div class="badge soft"><span class="dot"></span>Katalog Gerakan Cepat</div>
+          <h1>Latihan untuk Keseharian</h1>
+          <p class="lead">Kumpulan gerakan peregangan dan kardio ringan 5–15 menit yang bisa dilakukan di sela aktivitas atau di rumah tanpa alat ribet.</p>
+        </div>
+        <div class="stat-capsule">
+          <div class="icon-box mint"><span class="material-symbols-outlined">timer</span></div>
+          <div><span class="lbl">Rata-rata Waktu</span><span class="val">5 – 12 Menit</span><span class="sub">Bisa dilakukan di meja / kasur</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container catalog">
+    <div class="filters" id="filters" role="tablist" aria-label="Filter kategori latihan">
+      <button class="chip active" data-filter="all">Semua Latihan</button>
+      <button class="chip" data-filter="pemanasan">Pemanasan</button>
+      <button class="chip" data-filter="kos">Di Rumah</button>
+      <button class="chip" data-filter="kuliah">Sela Aktivitas</button>
+      <button class="chip" data-filter="kardio">Kardio Ringan</button>
+    </div>
+    <div class="grid cols-3" id="workoutGrid" style="margin-top:1.5rem"></div>
+    <p class="empty" id="emptyMsg">Belum ada latihan di kategori ini.</p>
+  </div>
+
+  <div class="container pad-y">
+    <div class="lat-challenge">
+      <div class="top">
+        <div>
+          <div class="badge" style="background:var(--secondary-fixed);color:var(--on-secondary-fixed-variant);margin-bottom:.5rem"><span class="material-symbols-outlined" style="font-size:16px">military_tech</span>Komitmen Konsistensi</div>
+          <h2 class="h-lg">Tantangan 7 Hari Bugar</h2>
+          <p class="muted" style="margin-top:.25rem">Bangun kebiasaan gerak harian 10 menit tanpa mengganggu jadwal harian Anda.</p>
+        </div>
+        <div class="progress-card">
+          <div class="row"><span>Progress Latihan</span><span class="v" id="latDone">3 dari 7 Hari</span></div>
+          <div class="bar lg"><div id="latBar" style="width:42.8%"></div></div>
+          <div class="foot"><span id="latPct">42% Selesai</span><span class="r" id="latLeft">4 Hari Tersisa</span></div>
+        </div>
+      </div>
+      <div class="days-grid" id="daysGrid"></div>
+      <div class="action-banner">
+        <div class="l">
+          <div class="ring"><span class="material-symbols-outlined">notifications_active</span></div>
+          <div><b>Jadwalkan Hari ke-4 Sebelum Jam 18:00 WIB</b><span class="muted small">Latihan 10 menit ini dirancang untuk dilakukan setelah aktivitas sore berakhir.</span></div>
+        </div>
+        <button class="btn btn-primary btn-pill btn-sm" id="todayBtn" style="padding:.625rem 1.5rem">Mulai Latihan Hari Ini</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="page" id="page-about" data-page="about">
+  <div class="about-hero">
+    <div class="glow wide"></div>
+    <div class="container">
+      <div class="about-top">
+        <div class="hero-copy" style="gap:0">
+          <div class="badge strong" style="margin-bottom:1.5rem;background:rgba(109,245,225,.4)"><span class="material-symbols-outlined icon-fill primary-text" style="font-size:16px">eco</span>Misi &amp; Cerita Kami</div>
+          <h1>Tentang <span class="primary-text" style="position:relative;display:inline-block">First Step
+            <svg class="underline-svg" preserveAspectRatio="none" viewBox="0 0 100 12"><path d="M0,8 Q50,0 100,6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"/></svg></span></h1>
+          <p class="lead" style="max-width:42rem;margin-bottom:2rem;line-height:1.7">Membantu siapa saja membangun kebiasaan sehat di tengah jadwal yang padat. Solusi kebugaran mikro yang praktis dan realistis untuk keseharian Anda.</p>
+          <div class="btn-row" style="padding:0">
+            <div class="mini-card"><div class="icon-box sm mint" style="color:var(--primary)"><span class="material-symbols-outlined">verified</span></div><div><b>100% Fleksibel</b><span class="s">Kamar tidur &amp; ruang tamu</span></div></div>
+            <div class="mini-card"><div class="icon-box sm" style="background:rgba(137,245,231,.5)"><span class="material-symbols-outlined">timer</span></div><div><b>5 - 15 Menit</b><span class="s">Gerakan mikro berenergi tinggi</span></div></div>
+          </div>
+        </div>
+        <div class="about-photo">
+          <div class="frame">
+            <div class="pic">
+              <img src="images/hero.jpg">
+      
+            </div>
+          </div>
+          <div class="float">
+            <div class="ring"><span class="material-symbols-outlined">fitness_center</span></div>
+            <div><b>0 Rupiah</b><span class="s">Bebas alat khusus &amp; gym</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:2.5rem;padding-bottom:2.5rem">
+    <div class="story-grid">
+      <div class="card story">
+        <div class="blob tr"></div>
+        <div>
+          <div class="head">
+            <div class="t"><div class="icon-box sm mint" style="width:40px;height:40px;border-radius:var(--r-md)"><span class="material-symbols-outlined" style="color:var(--primary);font-size:22px">history_edu</span></div><h2 class="h-md">Latar Belakang</h2></div>
+            <span class="tag">  </span>
+          </div>
+          <p>Dalam keseharian yang serba sibuk, kita sering terjebak dalam dilema yang sama yaitu jadwal aktivitas yang padat dari pagi hingga sore, tumpukan pekerjaan di meja, ruang gerak di rumah yang terbatas, serta anggapan keliru bahwa olahraga harus selalu melelahkan, memakan waktu berjam-jam, atau membutuhkan biaya keanggotaan gym yang mahal.</p>
+          <p>Dampaknya nyata tubuh terasa kaku, punggung pegal akibat duduk membungkuk seharian, hingga menurunnya fokus saat beraktivitas. <strong>First Step</strong> hadir sebagai jembatan realistis. Kami percaya perubahan besar selalu berawal dari satu gerakan kecil yang konsisten, tanpa membebani rutinitas harian Anda.</p>
+        </div>
+        <div class="foot">
+          <div class="l"><span class="material-symbols-outlined" style="font-size:18px">check_circle</span><span>Solusi Mikro-Olahraga</span></div>
+          <span class="muted small">Dirancang dari pengalaman pribadi</span>
+        </div>
+      </div>
+      <div class="card story">
+        <div class="blob br"></div>
+        <div>
+          <div class="head">
+            <div class="t"><div class="icon-box sm" style="width:40px;height:40px;border-radius:var(--r-md);background:rgba(137,245,231,.4)"><span class="material-symbols-outlined" style="color:var(--primary);font-size:22px">flag</span></div><h2 class="h-md">Tujuan &amp; Visi Kami</h2></div>
+            <span class="tag"></span>
+          </div>
+          <div class="pillars">
+            <div class="pillar"><div class="icon-box sm"><span class="material-symbols-outlined">repeat</span></div><div><h3>Membiasakan Gerakan Ringan 5–15 Menit</h3><p>Membangun kebiasaan kinetik harian yang mudah disisipkan di sela kesibukan tanpa rasa bersalah.</p></div></div>
+            <div class="pillar"><div class="icon-box sm"><span class="material-symbols-outlined">accessibility_new</span></div><div><h3>Mencegah Cedera Duduk Lama &amp; Text-Neck</h3><p>Peregangan ergonomis terarah untuk tulang belakang, pundak, dan leher akibat menatap layar monitor atau laptop berjam-jam.</p></div></div>
+            <div class="pillar"><div class="icon-box sm"><span class="material-symbols-outlined">payments</span></div><div><h3>Bebas Biaya dan Tanpa Alat Khusus</h3><p>Memanfaatkan berat tubuh sendiri (calisthenics ringan) dan barang di sekitar rumah tanpa pengeluaran tambahan.</p></div></div>
+            <div class="pillar"><div class="icon-box sm"><span class="material-symbols-outlined">psychology</span></div><div><h3>Meningkatkan Fokus Mental &amp; Energi Harian</h3><p>Menstimulasi sirkulasi oksigen ke otak guna menyegarkan daya ingat dan fokus.</p></div></div>
+          </div>
+        </div>
+        <div class="pillars-foot">Bugar Terjangkau • Berkelanjutan • Seimbang</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:3rem;padding-bottom:3rem">
+    <div class="matrix">
+      <div class="glow"></div>
+      <div class="matrix-grid">
+        <div><span class="num">01</span><h3>Duduk Terlalu Lama</h3><p>Rata-rata orang modern menghabiskan 8,5 jam sehari untuk duduk di ruang kerja maupun di depan layar monitor. First Step hadir untuk memecah siklus pasif tersebut.</p></div>
+        <div><span class="num">02</span><h3>Area fleksibel</h3><p>Seluruh panduan gerakan dirancang khusus agar dapat dipraktikkan langsung di sudut ruangan di rumah tanpa butuh ruang luas.</p></div>
+        <div><span class="num">03</span><h3>Sinergi Produktivitas</h3><p>Bukan tentang membentuk binaraga, melainkan menjaga stamina tubuh agar tidak tumbang di tengah jadwal yang padat.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:4rem;padding-bottom:4rem">
+    <div class="team-head">
+      <div>
+        <div class="badge neutral" style="margin-bottom:.75rem"><span class="material-symbols-outlined primary-text" style="font-size:16px">groups</span>Kolaborasi Karya</div>
+        <h2 class="h-lg">Tim Pengembang</h2>
+        <p class="muted" style="margin-top:.5rem;max-width:36rem">Inisiatif proyek ini dikembangkan secara penuh oleh <strong>Kelompok 4</strong> sebagai bentuk solusi digital bagi siapa saja yang ingin hidup lebih aktif.</p>
+      </div>
+      <span class="badge soft" style="text-transform:none;font-size:12px;color:var(--primary)">Kelompok 4 • First Step Project</span>
+    </div>
+    <div class="team-grid" id="teamGrid"></div>
+  </div>
+
+  <div class="disclaimer">
+    <div class="box">
+      <div class="t"><span class="material-symbols-outlined" style="font-size:20px">info</span><span>Catatan Keterbukaan &amp; Disclaimer Medis</span></div>
+      <p>Platform <em>First Step</em> merupakan luaran proyek kolaboratif pengembangan perangkat lunak. Seluruh gerakan dan tips dirancang untuk kebugaran umum (gerakan ringan harian). Jika Anda memiliki riwayat cedera muskuloskeletal atau kondisi kesehatan khusus, konsultasikan terlebih dahulu dengan profesional kesehatan sebelum memulai rutinitas fisik baru.</p>
+      <div class="meta"><span>Proyek Kelompok 4 • 2025</span><i></i><span>Dibuat untuk Semua Orang</span><i></i><span>Akses Terbuka &amp; Tanpa Komersialisasi</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="page" id="page-contact" data-page="contact">
+  <div class="contact-wrap">
+    <div class="glow a" style="opacity:.7"></div><div class="glow b" style="left:-8rem"></div>
+    <div class="container">
+      <div class="contact-head">
+        <div style="max-width:42rem">
+          <div class="badge strong"><span class="dot"></span>Layanan Pengguna</div>
+          <h1>Hubungi Kami</h1>
+          <p class="lead" style="line-height:1.7">Punya pertanyaan seputar program latihan, saran fitur, atau ingin berkolaborasi? Kami siap mendengar.</p>
+        </div>
+        <div class="status-pill">
+          <span class="material-symbols-outlined primary-text">schedule</span>
+          <div><span class="lbl">Waktu Respon Rata-rata</span><b>&lt; 24 Jam di Hari Senin - Jumat </b></div>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="col">
+          <div class="panel">
+            <div class="panel-top">
+              <div><span class="k">Saluran Langsung</span><h2>Kontak Resmi</h2></div>
+              <div class="icon-box sm mint" style="width:40px;height:40px"><span class="material-symbols-outlined primary-text" style="font-size:22px">contact_support</span></div>
+            </div>
+            <a class="contact-item" href="mailto:firststep@gmail.com">
+              <div class="ic"><span class="material-symbols-outlined">alternate_email</span></div>
+              <div class="tx"><span class="k">Email Terbuka</span><b>firststep@gmail.com</b></div>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </a>
+            <a class="contact-item" href="https://instagram.com/firststep.id" target="_blank" rel="noopener noreferrer">
+              <div class="ic b"><span class="material-symbols-outlined">photo_camera</span></div>
+              <div class="tx"><span class="k">Instagram Resmi</span><b>@firststep.id</b></div>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </a>
+            <div class="contact-item" style="align-items:flex-start">
+              <div class="ic c"><span class="material-symbols-outlined">schedule</span></div>
+              <div class="tx"><span class="k">Jam Respon</span><p>Senin — Jumat: 09.00 – 19.00 WIB</p><p class="hint"></p></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-top" style="padding-bottom:1rem">
+              <div><span class="k p">Kredit Proyek</span><h2>Kelompok 4 — Tim First Step</h2></div>
+              <span class="badge neutral" style="text-transform:none;letter-spacing:0;font-weight:600;white-space:nowrap">5 Anggota</span>
+            </div>
+            <p class="muted small" style="padding-bottom:1rem">Platform kebugaran ini dirintis bersama untuk menjawab gaya hidup aktif yang realistis di tengah keseharian.</p>
+            <div class="team-mini" id="teamMini"></div>
+            <div class="friendly"><span class="material-symbols-outlined">sentiment_satisfied</span><p>Formulir ini disiapkan untuk respon cepat dan masukan pengguna demi pengembangan fitur yang lebih relevan.</p></div>
+          </div>
+
+          <div class="campus-card">
+            <div class="pic"><img src="images/komunitas.jpg" alt="Suasana komunitas First Step" loading="lazy"><p>Bugar bareng teman, mulai dari langkah pertama.</p></div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <header>
+            <div class="kick"><i></i>Tinggalkan Pesan</div>
+            <h2 class="h-md">Kirimkan Masukan atau Pertanyaan</h2>
+            <p class="muted" style="margin-top:.25rem">Isi data di bawah ini. Masukan Anda akan langsung diteruskan ke tim pengembang First Step.</p>
+          </header>
+          <form class="stack-lg" id="contactForm" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="fullName"><span>Nama Lengkap</span><span class="req">*wajib</span></label>
+                <div class="input-wrap"><span class="material-symbols-outlined">person</span><input class="control" id="fullName" placeholder="cth. XXXXXXX " required type="text" autocomplete="name"></div>
+              </div>
+              <div class="field">
+                <label for="email"><span>Email/ Pribadi</span><span class="req">*wajib</span></label>
+                <div class="input-wrap"><span class="material-symbols-outlined">mail</span><input class="control" id="email" placeholder="email" required type="email" autocomplete="email"></div>
+              </div>
+            </div>
+            <div class="field">
+              <label for="subjectTopic">Subjek / Topik Bahasan</label>
+              <div class="input-wrap">
+                <span class="material-symbols-outlined">tune</span>
+                <select class="control" id="subjectTopic">
+                  <option value="latihan">Pertanyaan Seputar Program Latihan</option>
+                  <option value="teknis">Kendala Teknis / Bug Aplikasi</option>
+                  <option value="saran" selected>Saran &amp; Rekomendasi Fitur Baru</option>
+                  <option value="kolaborasi">Kolaborasi &amp; Kemitraan</option>
+                </select>
+                <span class="material-symbols-outlined end">expand_more</span>
+              </div>
+            </div>
+            <div class="chips-row">
+              <span class="lbl">Topik Cepat:</span>
+              <button class="topic-chip" type="button" data-topic="latihan">Program Latihan</button>
+              <button class="topic-chip" type="button" data-topic="teknis">Kendala Teknis</button>
+              <button class="topic-chip active" type="button" data-topic="saran">Saran Fitur</button>
+            </div>
+            <div class="field">
+              <label for="message"><span>Pesan Anda</span><span class="cnt" id="charCount">0 / 500 karakter</span></label>
+              <textarea class="control" id="message" maxlength="500" rows="5" required placeholder="Tuliskan pengalaman Anda, kendala yang dihadapi saat latihan di rumah, atau ide fitur baru yang ingin Anda temukan di First Step..."></textarea>
+            </div>
+            <div class="submit-row">
+              <button class="btn btn-primary btn-pill btn-send" id="submitBtn" type="submit" style="padding:.875rem 2rem"><span>Kirim Pesan Sekarang</span><span class="material-symbols-outlined shift">send</span></button>
+              <div class="priv"><span class="material-symbols-outlined">verified_user</span><span>Privasi data terjamin</span></div>
+            </div>
+            <p class="form-note">Formulir simulasi / aktif untuk feedback pengguna. Terima kasih telah membantu First Step bertumbuh!</p>
+          </form>
+          <div class="success" id="success">
+            <div class="ring"><span class="material-symbols-outlined">check_circle</span></div>
+            <h3 class="h-md">Pesan Berhasil Terkirim!</h3>
+            <p>Terima kasih atas masukannya. Tim First Step (Kelompok 4) akan meninjau catatan Anda segera.</p>
+            <button class="btn btn-primary btn-pill btn-sm" id="resetBtn" type="button" style="padding:.625rem 1.5rem">Kirim Pesan Lainnya</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGIN ================= -->
+<section class="page" id="page-login" data-page="login">
+  <div class="auth-wrapper">
+    <div class="glow a" style="top:-3rem;right:15%"></div>
+    <div class="glow b" style="bottom:-4rem;left:10%"></div>
+    <div class="container auth-container">
+      <div class="auth-card card">
+        <div class="auth-header">
+          <div class="auth-logo">
+            <img src="images/first-step-logo-512.png" alt="Logo First Step" width="46" height="46">
+          </div>
+          <span class="badge soft" style="margin-bottom:0.5rem"><span class="material-symbols-outlined" style="font-size:16px">lock_open</span>Akses Pengguna</span>
+          <h1 class="h-lg">Masuk ke Akun</h1>
+          <p class="lead auth-desc">Lanjutkan langkah sehat dan rutinitas kebugaran harian Anda.</p>
+        </div>
+
+        <form class="auth-form stack-lg" id="loginForm" novalidate>
+          <div class="field">
+            <label for="loginIdentifier"><span>No. Telp atau Email</span><span class="req">*wajib</span></label>
+            <div class="input-wrap">
+              <span class="material-symbols-outlined">alternate_email</span>
+              <input class="control" id="loginIdentifier" type="text" placeholder="cth. 08123456789 atau nama@email.com" required autocomplete="username">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field-label-row">
+              <label for="loginPassword"><span>Password</span><span class="req">*wajib</span></label>
+              <a href="#" class="forgot-link" id="forgotPassLink">Lupa password?</a>
+            </div>
+            <div class="input-wrap">
+              <span class="material-symbols-outlined">lock</span>
+              <input class="control" id="loginPassword" type="password" placeholder="Masukkan kata sandi Anda" required autocomplete="current-password">
+              <button type="button" class="toggle-pass-btn" aria-label="Lihat password" data-toggle="loginPassword">
+                <span class="material-symbols-outlined">visibility</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="auth-options">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="rememberMe" checked>
+              <span class="checkmark"></span>
+              <span>Ingat saya di perangkat ini</span>
+            </label>
+          </div>
+
+          <button class="btn btn-primary btn-pill btn-block" id="loginSubmitBtn" type="submit">
+            <span>Masuk Sekarang</span>
+            <span class="material-symbols-outlined shift">arrow_forward</span>
+          </button>
+        </form>
+
+        <div class="auth-divider">
+          <span>atau</span>
+        </div>
+
+        <div class="auth-footer">
+          <p>Belum punya akun? <a href="#register" class="primary-text font-bold" data-route="register">Daftar sebagai Member</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REGISTER ================= -->
+<section class="page" id="page-register" data-page="register">
+  <div class="auth-wrapper">
+    <div class="glow a" style="top:-3rem;right:10%"></div>
+    <div class="glow b" style="bottom:-5rem;left:15%"></div>
+    <div class="container auth-container auth-wide">
+      <div class="auth-card card">
+        <div class="auth-header">
+          <div class="auth-logo">
+            <img src="images/first-step-logo-512.png" alt="Logo First Step" width="46" height="46">
+          </div>
+          <span class="badge soft" style="margin-bottom:0.5rem"><span class="material-symbols-outlined" style="font-size:16px">card_membership</span>Pendaftaran Member</span>
+          <h1 class="h-lg">Mendaftar Member Baru</h1>
+          <p class="lead auth-desc">Bergabunglah dengan 15.000+ pengguna yang aktif membangun kebiasaan bugar.</p>
+        </div>
+
+        <form class="auth-form stack-lg" id="registerForm" novalidate>
+          <div class="field">
+            <label for="regFullName"><span>Nama Lengkap</span><span class="req">*wajib</span></label>
+            <div class="input-wrap">
+              <span class="material-symbols-outlined">person</span>
+              <input class="control" id="regFullName" type="text" placeholder="cth. XXXXXXXX " required autocomplete="name">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="regPhone"><span>No. Telepon / WhatsApp</span><span class="req">*wajib</span></label>
+              <div class="input-wrap">
+                <span class="material-symbols-outlined">call</span>
+                <input class="control" id="regPhone" type="tel" placeholder="08xxxxxxxxxx" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="regEmail"><span>Email</span><span class="req">*wajib</span></label>
+              <div class="input-wrap">
+                <span class="material-symbols-outlined">mail</span>
+                <input class="control" id="regEmail" type="email" placeholder="nama@email.com" required autocomplete="email">
+              </div>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="regPassword"><span>Password</span><span class="req">*wajib</span></label>
+              <div class="input-wrap">
+                <span class="material-symbols-outlined">lock</span>
+                <input class="control" id="regPassword" type="password" placeholder="Minimal 6 karakter" required minlength="6" autocomplete="new-password">
+                <button type="button" class="toggle-pass-btn" aria-label="Lihat password" data-toggle="regPassword">
+                  <span class="material-symbols-outlined">visibility</span>
+                </button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="regConfirmPassword"><span>Konfirmasi Password</span><span class="req">*wajib</span></label>
+              <div class="input-wrap">
+                <span class="material-symbols-outlined">lock_reset</span>
+                <input class="control" id="regConfirmPassword" type="password" placeholder="Ulangi kata sandi" required minlength="6" autocomplete="new-password">
+                <button type="button" class="toggle-pass-btn" aria-label="Lihat password" data-toggle="regConfirmPassword">
+                  <span class="material-symbols-outlined">visibility</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-options">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="agreeTerms" required>
+              <span class="checkmark"></span>
+              <span>Saya menyetujui komitmen kebugaran &amp; ketentuan First Step</span>
+            </label>
+          </div>
+
+          <button class="btn btn-primary btn-pill btn-block" id="registerSubmitBtn" type="submit">
+            <span>Daftar Menjadi Member</span>
+            <span class="material-symbols-outlined shift">how_to_reg</span>
+          </button>
+        </form>
+
+        <div class="auth-divider">
+          <span>atau</span>
+        </div>
+
+        <div class="auth-footer">
+          <p>Sudah terdaftar sebagai member? <a href="#login" class="primary-text font-bold" data-route="login">Masuk ke Akun Anda</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="images/first-step-logo-512.png" alt="Logo First Step" width="32" height="32"><span>First Step</span></div>
+      <div class="footer-links">
+        <a href="#home" data-route="home">Beranda</a>
+        <a href="#latihan" data-route="latihan">Panduan Latihan</a>
+        <a href="#about" data-route="about">Tentang Kami</a>
+        <a href="#contact" data-route="contact">Hubungi Tim</a>
+        <a href="#login" data-route="login">Masuk / Member</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODAL & TOAST ================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <div class="modal-head">
+      <div class="t">
+        <div class="icon-box sm"><span class="material-symbols-outlined primary-text" style="font-size:18px">bolt</span></div>
+        <h4 id="modalTitle">Mulai Latihan</h4>
+      </div>
+      <button class="close-btn" id="modalClose" aria-label="Tutup"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <p class="muted" id="modalDesc"></p>
+    <div class="timer-box">
+      <div><span class="lbl">Target Timer</span><span class="time" id="timerText">07:00</span></div>
+      <button class="btn btn-primary btn-sm" id="timerBtn" style="padding:.625rem 1.25rem">Mulai Sekarang</button>
+    </div>
+    <div class="bar timer-bar"><div id="timerBar" style="width:0"></div></div>
+  </div>
+</div>
+
+<!-- Modal Konfirmasi Logout -->
+<div class="modal" id="logoutModal" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+  <div class="modal-card" style="max-width:24rem;text-align:center;align-items:center;padding:2rem 1.75rem">
+    <div class="icon-box" style="width:56px;height:56px;border-radius:50%;background:rgba(186,26,26,0.12);color:var(--error);margin-bottom:.25rem">
+      <span class="material-symbols-outlined" style="font-size:28px">logout</span>
+    </div>
+    <h3 id="logoutTitle" style="font-size:20px;font-weight:700">Konfirmasi Keluar</h3>
+    <p class="muted" style="font-size:14px;line-height:22px;margin-top:.25rem">Anda yakin untuk logout dari website ini?</p>
+    <div style="display:flex;gap:.75rem;width:100%;margin-top:1.25rem">
+      <button class="btn btn-light" id="cancelLogoutBtn" type="button" style="flex:1;border-radius:var(--r-full);padding:.625rem 1rem">Batal</button>
+      <button class="btn btn-primary" id="confirmLogoutBtn" type="button" style="flex:1;background:var(--error);border-radius:var(--r-full);padding:.625rem 1rem;box-shadow:0 4px 14px rgba(186,26,26,0.25)">Ya, Keluar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span class="material-symbols-outlined">info</span><span id="toastText"></span></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
